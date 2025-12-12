@@ -1,4 +1,4 @@
-/** Dieses Programm gibt auf der Konsole Hello World aus. */
+// Dieses Programm gibt auf der Konsole Hello World aus.
 
 public class Aufgabe1 {
     public static void main(String[] args) {
