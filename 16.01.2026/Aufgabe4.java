@@ -10,6 +10,6 @@ public class Aufgabe4 {
 
         System.out.println("Jeder Schüler bekommt " + klassenkasse/30 + " Euro zurück");
         System.out.println("Rest in der Kasse: " + klassenkasse%30 + " Euro");
-        System.out.println("Genau Auszahlung pro Schüler: " + klassenkasse / 30f + " Euro");
+        System.out.println("Genau Auszahlung pro Schüler: " + klassenkasse / 30. + " Euro");
     }
 }
