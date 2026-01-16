@@ -3,7 +3,7 @@
 public class Aufgabe2 {
     public static void main(String[] args) {
         
-        // Gibt das Ergebnis der Berechnung aus
+        // Gibt das Ergebnis einer Berechnung aus
 
         System.out.println(19+5); // Addiert zwei Zahlen
         System.out.println(19-5); // Subtrahiert die zweite Zahl von der ersten
