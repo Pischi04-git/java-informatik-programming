@@ -1,6 +1,6 @@
 public class typumwandlung {
     public static void main(String[] args) {
-        
+
         // Implizite Typumwandlung
         int zahl = 10;
         System.out.println(zahl);
