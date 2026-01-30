@@ -1,3 +1,9 @@
+/*
+Das Programm liest eine Integer-Zahl n von der Eingabe ein.
+Es berechnet die Summe der ersten n natürlichen Zahlen mithilfe einer for-Schleife.
+Zusätzlich misst es die Berechnungszeit und gibt Summe sowie Dauer in Millisekunden aus.
+*/
+
 import java.util.Scanner;
 
 public class forschleife {
