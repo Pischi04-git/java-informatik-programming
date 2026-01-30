@@ -1,3 +1,9 @@
+/*
+Das Programm liest zwei boolean-Werte ein.
+Es demonstriert die Negation von UND und die Anwendung von De Morgans Gesetz.
+Die Ergebnisse !(a & b) und (!a) | (!b) werden ausgegeben.
+*/
+
 import java.util.Scanner;
 
 public class aufgabe9 {

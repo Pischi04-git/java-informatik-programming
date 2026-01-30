@@ -1,3 +1,9 @@
+/*
+Das Programm simuliert die Verwaltung einer Klassenkasse.
+Es berechnet Einnahmen von Schülern und Ausgaben für Aktivitäten.
+Schließlich berechnet es den Rückzahlungsbetrag pro Schüler und den Rest in der Kasse.
+*/
+
 public class Aufgabe4 {
     public static void main(String[] args) {
         int Klassenkasse = 0;

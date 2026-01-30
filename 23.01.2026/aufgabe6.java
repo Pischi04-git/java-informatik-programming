@@ -1,3 +1,9 @@
+/*
+Das Programm arbeitet mit zwei Arrays und prüft, ob zwischen ihnen ein proportionaler Zusammenhang besteht.
+Es berechnet die Verhältnisse zwischen entsprechenden Elementen der Arrays.
+Das Ergebnis, ob der Zusammenhang proportional ist, wird als boolean ausgegeben.
+*/
+
 public class aufgabe6 {
     public static void main(String[] args) {
         int[] x = {1, 3, 7, 10};

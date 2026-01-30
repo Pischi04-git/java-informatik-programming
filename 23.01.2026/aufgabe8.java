@@ -1,3 +1,9 @@
+/*
+Das Programm verwendet einen Scanner, um zwei Integer-Werte von der Eingabe zu lesen.
+Es berechnet ihre Summe.
+Die Summe wird auf der Konsole ausgegeben.
+*/
+
 import java.util.Scanner;
 
 public class aufgabe8 {

@@ -1,3 +1,9 @@
+/*
+Das Programm liest eine Integer-Zahl ein.
+Es verwendet eine if-else-Struktur, um zu prüfen, ob die Zahl gerade oder ungerade ist.
+Entsprechend wird eine Nachricht auf der Konsole ausgegeben.
+*/
+
 import java.util.Scanner;
 
 public class aufgabe10 {

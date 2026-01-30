@@ -1,3 +1,9 @@
+/*
+Das Programm demonstriert implizite und explizite Typumwandlungen in Java.
+Es wandelt int zu double implizit und double zu int explizit.
+Die Werte werden jeweils auf der Konsole ausgegeben.
+*/
+
 public class typumwandlung {
     public static void main(String[] args) {
 

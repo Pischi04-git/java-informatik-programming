@@ -1,3 +1,9 @@
+/*
+Das Programm initialisiert eine Variable und verwendet eine if-else-if-Kette.
+Es vergleicht den Wert mit 7.
+Es gibt aus, ob die Zahl größer, gleich oder kleiner als 7 ist.
+*/
+
 public class dreikontrollstrukturen {
     public static void main(String[] args) {
         int zahl = 5;

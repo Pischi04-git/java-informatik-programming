@@ -1,4 +1,8 @@
-// Dieses Programm demonstriert verschiedene Rechenoperationen.
+/*
+Dieses Programm zeigt verschiedene arithmetische Operationen in Java.
+Es führt Addition, Subtraktion, Multiplikation, Division (ganzzahlig und dezimal), sowie Modulo-Operation durch.
+Die Ergebnisse werden jeweils auf der Konsole ausgegeben.
+*/
 
 public class Aufgabe2 {
     public static void main(String[] args) {

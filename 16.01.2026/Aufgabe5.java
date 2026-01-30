@@ -1,3 +1,9 @@
+/*
+Das Programm deklariert zwei Integer-Variablen und vergleicht sie.
+Es prüft, ob die erste Zahl kleiner oder gleich der zweiten ist.
+Das boolesche Ergebnis des Vergleichs wird auf der Konsole ausgegeben.
+*/
+
 public class Aufgabe5 {
     public static void main(String[] args) {
         int ersteZahl = 1; // Deklaration und Initialisierung der ersten Zahl
