@@ -9,5 +9,5 @@ public class vierZeichenketten {
         System.out.println(vorname.length()); // Gibt die Länge des Vornamens aus / Anzahl an Zeichen
         System.out.println(vorname.charAt(2)); // Gibt das Zeichen an der Position 2 des Vornamens aus
         System.out.println(nachname.substring(1, 3)); // Gibt die Zeichen von Position 1 bis 2 des Nachnamens aus
-    }
+    }                                         // Inklusiv  | Exklusiv
 }
