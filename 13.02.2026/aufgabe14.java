@@ -30,7 +30,7 @@ public class aufgabe14 {
         System.out.println("Zeichenhäufigkeit:");
         for (int i = 0; i < counting_array.length; i++) {
             if (counting_array[i][0] != 0) {
-                System.out.println((char)counting_array[i][0] + ": " + counting_array[i][1]);
+                System.out.println((char)counting_array[i][0] + ": " + counting_array[i][1] + " " + counting_array[i][1]/ (double)text.length() * 100 + "%");
             }
         }
     }
