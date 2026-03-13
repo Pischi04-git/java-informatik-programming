@@ -1,49 +1,64 @@
 public class aufgabe17 {
 
-    public static float ggt(float a, float b) {
+    public static int ggt(int a, int b) {
         while (b != 0) {
-            float temp = b;
+            int temp = b;
             b = a % b;
             a = temp;
         }
-        return a;
+        return Math.abs(a);
     }
 
-    public static float kgv(float a, float b) {
+    public static int kgv(int a, int b) {
         if (a == 0 || b == 0) {
             return 0;
         }
-        return (a * b) / ggt(a, b);
+        return Math.abs((a * b) / ggt(a, b));
     }
-
 
     public static void main(String[] args) {
+        // Gleichungssystem: 
+        // 0: 2x + 1y = 10
+        // 1: 1x + 2y = 8
+        float[][] gleichungssystem = {
+            {2, 3, 10},   
+            {1, 2, 12}    
+        };
 
-        float[][] gleichungssystem = { {2, 1, 10}, {-1, 2, 8},  {0, 0, 0}}; 
+        System.out.println("Altes Gleichungssystem:");
+        System.out.printf("%.2fx + %.2fy = %.2f%n", 
+            gleichungssystem[0][0], gleichungssystem[0][1], gleichungssystem[0][2]);
+        System.out.printf("%.2fx + %.2fy = %.2f%n", 
+            gleichungssystem[1][0], gleichungssystem[1][1], gleichungssystem[1][2]);
 
-        // 2x + 1y = 10
-        // -1x + 2y = 8
+        int kleinsteGemeinsameVielfache = kgv(
+            (int) gleichungssystem[0][0], 
+            (int) gleichungssystem[1][0]
+        );
 
-        float gkv = kgv(gleichungssystem[0][0], gleichungssystem[1][0]);
+        System.out.println("KGV der Koeffizienten von x: " + kleinsteGemeinsameVielfache);
 
-        gleichungssystem[2][0] = gleichungssystem[0][0] / gkv;
-        gleichungssystem[2][1] = gleichungssystem[0][1] / gkv;
-        gleichungssystem[2][2] = gleichungssystem[0][2] / gkv;
+        float multiplikatorGleichung1 = kleinsteGemeinsameVielfache / gleichungssystem[0][0];
+        float multiplikatorGleichung2 = kleinsteGemeinsameVielfache / gleichungssystem[1][0];
 
-        System.out.println("Neues Gleichungssystem:");
-        System.out.println(gleichungssystem[2][0] + "x + " + gleichungssystem[2][1] + "y = " + gleichungssystem[2][2]);
-        System.out.println(gleichungssystem[1][0] + "x + " + gleichungssystem[1][1] + "y = " + gleichungssystem[1][2]);
 
-        float t = gleichungssystem[2][1] + gleichungssystem[1][1];
-        float s = gleichungssystem[2][2] + gleichungssystem[1][2];
-        float y = s / t;
+        float g1_y = gleichungssystem[0][1] * multiplikatorGleichung1;
+        float g1_ergebnis = gleichungssystem[0][2] * multiplikatorGleichung1;
 
-        System.out.println("Lösung: y = " + y);
+        float g2_y = gleichungssystem[1][1] * multiplikatorGleichung2;
+        float g2_ergebnis = gleichungssystem[1][2] * multiplikatorGleichung2;
 
-        float x = (gleichungssystem[0][2] - gleichungssystem[0][1] * y) / (float) gleichungssystem[0][0];
+        System.out.println("Gleichungssystem nach Anpassung an KGV:");
+        System.out.printf("%.2fx + %.2fy = %.2f%n", (float)kleinsteGemeinsameVielfache, g1_y, g1_ergebnis);
+        System.out.printf("%.2fx + %.2fy = %.2f%n", (float)kleinsteGemeinsameVielfache, g2_y, g2_ergebnis);
 
-        System.out.println("Lösung: x = " + x);
+        float diffKoeffizientenY = g2_y - g1_y;
+        float diffErgebnisse = g2_ergebnis - g1_ergebnis;
 
+        float y = diffErgebnisse / diffKoeffizientenY;
+        System.out.printf("Lösung: y = %.2f%n", y);
+
+        float x = (gleichungssystem[0][2] - gleichungssystem[0][1] * y) / gleichungssystem[0][0];
+        System.out.printf("Lösung: x = %.2f%n", x);
     }
 }
-
