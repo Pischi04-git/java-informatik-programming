@@ -11,5 +11,7 @@ public class aufgabe19 {
         liste.remove("Clara"); // Entfernt den Wert an der Stelle 3
         System.out.println(liste.size()); // Gibt die Größe der Liste aus
         System.out.println(liste.get(1)); // Gibt den Wert an der Stelle 1 aus
+        System.out.println(liste.toString()); // Gibt die Liste als String aus
+        System.out.println(liste.indexOf("Markus")); // Gibt den Index von "Markus" in der Liste aus
     }
 }
