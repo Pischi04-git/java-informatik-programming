@@ -18,6 +18,7 @@ public class aufgabe21 {
             sum += liste.get(i);
         }
 
+        System.out.println(liste.toString());
         System.out.println("Die Summe der Werte in der Liste ist: " + sum);
         s.close();
     }
