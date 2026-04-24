@@ -7,13 +7,13 @@ public class aufgabe25 {
         s.close();
         
         for (int i = 0; i < zahl; i++) {
-            if (isprime(i)) {
+            if (isPrime(i)) {
                 System.out.println(i);
             }
         }
     }
 
-    private static boolean isprime(int zahl) {
+    private static boolean isPrime(int zahl) {
         if (zahl <= 1) {
             return false;
         }
